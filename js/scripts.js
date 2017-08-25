@@ -4,20 +4,20 @@ function Pizza(size, toppings) {
 
 }
 
-Ticket.prototype.pizzaTotal = function () {
+Pizza.prototype.pizzaTotal = function () {
   return this.size + this.toppings
 
 }
 
 
 $(document).ready(function() {
-  $(#"pizza").submit(function(event) {
+  $("#pizza").submit(function(event) {
     event.preventDefault();
 
     var sizeInput = $("#size").val();
     var toppingInput = $("#toppings").val();
 
-    var NewPizza = new Pizza(parseInt(sizeInput), parseInt(toppingInput));
-    alert(newPizza.pizzaTotal());
+    var newPizza = new Pizza(parseInt(sizeInput), parseInt(toppingInput));
+    alert("Your pizza comes to $" + newPizza.pizzaTotal() + ", thank you!");
   });
 });
