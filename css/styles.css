@@ -1,3 +1,20 @@
 body {
-background-color: #EEF11C;
+  background-image: url(../img/brick.jpg);
+}
+
+h1 {
+  text-align: center;
+}
+
+.jumbotron {
+  background-color: #EEF11C
+}
+
+.well {
+  background-color: orange;
+}
+
+img {
+  width: 360px;
+  padding-left: 100px;
 }
